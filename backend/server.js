@@ -10,7 +10,11 @@ app.get("/", (req, res) => {
 });
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://ec2-34-236-154-10.compute-1.amazonaws.com:3000",
+  })
+);
 app.use(bodyParser.json());
 
 // Generera engångslösenord

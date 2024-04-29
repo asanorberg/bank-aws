@@ -78,10 +78,9 @@ const AccountPage = () => {
         }
       } catch (error) {
         console.error("Error:", error);
-      } finally {
-        setDepositValue(0);
       }
     }
+    setDepositValue("");
   };
 
   const handleVerify = () => {
